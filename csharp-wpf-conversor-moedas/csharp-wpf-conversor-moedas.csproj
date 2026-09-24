@@ -9,4 +9,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Resources\Assets\brasil.png" />
+    <None Remove="Resources\Assets\converter.png" />
+    <None Remove="Resources\Assets\estados-unidos.png" />
+    <None Remove="Resources\Assets\japao.png" />
+    <None Remove="Resources\Assets\reino-unido.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Assets\brasil.png" />
+    <Resource Include="Resources\Assets\converter.png" />
+    <Resource Include="Resources\Assets\estados-unidos.png" />
+    <Resource Include="Resources\Assets\japao.png" />
+    <Resource Include="Resources\Assets\reino-unido.png" />
+  </ItemGroup>
+
 </Project>

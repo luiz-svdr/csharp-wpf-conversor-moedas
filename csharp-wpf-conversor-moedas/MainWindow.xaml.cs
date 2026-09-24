@@ -20,5 +20,9 @@ namespace csharp_wpf_conversor_moedas
         {
             InitializeComponent();
         }
+
+        private void InverterBtn_click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }
