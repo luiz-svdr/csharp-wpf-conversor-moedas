@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:csharp_wpf_conversor_moedas"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/ImageDictionary.xaml" />
+                <ResourceDictionary Source="Resources/ProjectDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
