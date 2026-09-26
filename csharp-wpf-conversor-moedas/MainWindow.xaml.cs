@@ -28,14 +28,16 @@ namespace csharp_wpf_conversor_moedas
 
         private void ConversaoBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(txtValorOrigem.Text) || cmbMoedaOrigem.SelectedItem == null || cmbMoedaDestino.SelectedItem == null || !string.IsNullOrEmpty(txtValorDestino.Text))
+            var validacao = new ValidacaoInfoCambio();
+            if (!validacao.Validar(txtValorOrigem.Text, (OpcoesConversor)cmbMoedaOrigem.SelectedItem, (OpcoesConversor)cmbMoedaDestino.SelectedItem, out decimal valorOrigem, out string mensagemErro))
             {
-                MessageBox.Show("Por favor, insira informações válidas para conversão.", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(mensagemErro, "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
+
             CambioMoedas cambioMoedas = new CambioMoedas();
-            txtValorDestino.Text = cambioMoedas.Converter((OpcoesConversor)cmbMoedaOrigem.SelectedItem, (OpcoesConversor)cmbMoedaDestino.SelectedItem, decimal.Parse(txtValorOrigem.Text)).ToString("F2");
-        }   
+            txtValorDestino.Text = cambioMoedas.Converter((OpcoesConversor)cmbMoedaOrigem.SelectedItem, (OpcoesConversor)cmbMoedaDestino.SelectedItem, valorOrigem).ToString("F2");
+        }
 
         private void InverterBtn_click(object sender, RoutedEventArgs e)
         {

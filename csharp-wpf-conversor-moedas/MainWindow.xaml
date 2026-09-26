@@ -96,6 +96,7 @@
                       DisplayMemberPath="Sigla" />
 
             <TextBox x:Name="txtValorDestino"
+                     IsReadOnly="True"
                      Grid.Column="2"
                      Height="40"
                      VerticalContentAlignment="Center" />
