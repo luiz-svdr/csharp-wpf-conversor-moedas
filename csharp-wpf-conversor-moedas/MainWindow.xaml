@@ -102,6 +102,7 @@
         </Grid>
 
         <Button x:Name="btnConverter"
+                Click="ConversaoBtn_Click"
                 Grid.Row="4"
                 Content="Converter"
                 Height="36"

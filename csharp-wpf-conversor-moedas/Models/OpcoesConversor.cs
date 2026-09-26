@@ -11,5 +11,6 @@ namespace csharp_wpf_conversor_moedas.Models
     {
         public string Sigla { get; set; }
         public ImageSource Bandeira { get; set; }
+        public decimal Taxa { get; set; }
     }
 }

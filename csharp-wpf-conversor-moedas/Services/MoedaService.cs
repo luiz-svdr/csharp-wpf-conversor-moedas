@@ -15,11 +15,20 @@ namespace csharp_wpf_conversor_moedas.Services
         { 
             ListaMonetaria = new ObservableCollection<OpcoesConversor>
             {
-                new OpcoesConversor { Sigla = "USD", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/estados-unidos.png", UriKind.Relative)) },
-                new OpcoesConversor { Sigla = "GBP", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/reino-unido.png", UriKind.Relative)) },
-                new OpcoesConversor { Sigla = "BRL", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/brasil.png", UriKind.Relative)) },
-                new OpcoesConversor { Sigla = "JPY", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/japao.png", UriKind.Relative)) },
-                new OpcoesConversor { Sigla = "EUR", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/europa.png", UriKind.Relative)) }
+                new OpcoesConversor { Sigla = "USD", 
+                    Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/estados-unidos.png", UriKind.Relative)), 
+                    Taxa = 1.0M },
+                new OpcoesConversor { Sigla = "GBP", 
+                    Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/reino-unido.png", UriKind.Relative)),
+                    Taxa = 0.75M },
+                new OpcoesConversor { Sigla = "BRL", Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/brasil.png", UriKind.Relative)), 
+                    Taxa = 5.0M },
+                new OpcoesConversor { Sigla = "JPY", 
+                    Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/japao.png", UriKind.Relative)), 
+                    Taxa = 110.0M },
+                new OpcoesConversor { Sigla = "EUR", 
+                    Bandeira = new System.Windows.Media.Imaging.BitmapImage(new Uri("/Resources/Assets/uniao-europeia.png", UriKind.Relative)), 
+                    Taxa = 0.85M }
             };
         }
     }
