@@ -2,13 +2,10 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <BitmapImage x:Key="ImgBrasil" UriSource="pack://application:,,,/Resources/Assets/brasil.png" />
-
     <BitmapImage x:Key="ImgEstadosUnidos" UriSource="pack://application:,,,/Resources/Assets/estados-unidos.png" />
-
     <BitmapImage x:Key="ImgJapao" UriSource="pack://application:,,,/Resources/Assets/japao.png" />
-
     <BitmapImage x:Key="ImgReinoUnido" UriSource="pack://application:,,,/Resources/Assets/reino-unido.png" />
-    
+    <BitmapImage x:Key="ImgUniaoEuropeia" UriSource="pack://application:,,,/Resources/Assets/uniao-europeia.png" />
     <BitmapImage x:Key="ImgConverter" UriSource="pack://application:,,,/Resources/Assets/converter.png" />
 
 </ResourceDictionary>
