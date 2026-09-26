@@ -9,7 +9,7 @@
         Width="360"
         Height="640"
         ResizeMode="NoResize"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Cursor="">
 
     <Grid Margin="16">
         <Grid.RowDefinitions>
@@ -41,14 +41,17 @@
                    Width="32"
                    Height="32"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center" />
+                   VerticalAlignment="Center"
+                   Source="{Binding ElementName=cmbMoedaOrigem, Path=SelectedItem.Bandeira}" />
 
             <ComboBox x:Name="cmbMoedaOrigem"
                       Grid.Column="1"
                       MinWidth="80"
                       Height="40"
                       Margin="8,0,8,0"
-                      VerticalContentAlignment="Center" />
+                      VerticalContentAlignment="Center"
+                      ItemsSource="{Binding ListaMonetaria}"
+                      DisplayMemberPath="Sigla" />
 
             <TextBox x:Name="txtValorOrigem"
                      Grid.Column="2"
@@ -80,14 +83,17 @@
                    Width="32"
                    Height="32"
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center" />
+                   VerticalAlignment="Center"
+                   Source="{Binding ElementName=cmbMoedaDestino, Path=SelectedItem.Bandeira}" />
 
             <ComboBox x:Name="cmbMoedaDestino"
                       Grid.Column="1"
                       MinWidth="80"
                       Height="40"
                       Margin="8,0,8,0"
-                      VerticalContentAlignment="Center" />
+                      VerticalContentAlignment="Center"
+                      ItemsSource="{Binding ListaMonetaria}"
+                      DisplayMemberPath="Sigla" />
 
             <TextBox x:Name="txtValorDestino"
                      Grid.Column="2"

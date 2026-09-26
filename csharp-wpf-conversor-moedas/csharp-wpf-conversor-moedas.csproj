@@ -15,6 +15,7 @@
     <None Remove="Resources\Assets\estados-unidos.png" />
     <None Remove="Resources\Assets\japao.png" />
     <None Remove="Resources\Assets\reino-unido.png" />
+    <None Remove="Resources\Assets\uniao-europeia.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,7 @@
     <Resource Include="Resources\Assets\estados-unidos.png" />
     <Resource Include="Resources\Assets\japao.png" />
     <Resource Include="Resources\Assets\reino-unido.png" />
+    <Resource Include="Resources\Assets\uniao-europeia.png" />
   </ItemGroup>
 
 </Project>
